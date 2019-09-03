@@ -261,6 +261,7 @@
   <component name="ProjectId" id="1Q6DzKw8XD3fbtxywLXdSIcW8Vi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../exo-blog-symfony" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
