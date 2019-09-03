@@ -1,0 +1,40 @@
+{% extends 'base/base_admin.html.twig' %}
+
+{% block title 'Gérer les jeux' %}
+
+{% block body %}
+
+    <div class="container mt -4">
+        <h1>Gérer les jeux</h1>
+        {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message  }}
+        </div>
+        {% endfor %}
+
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Titre du jeux</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for jeu in jeux %}
+                <tr>
+                    <td>{{ jeu.titre }}</td>
+                    <td><a href="{{ path('admin_jeu_modif', {'id': jeu.id}) }}" class="btn btn-secondary">Editer</a>
+                        <a href="{{ path('jeu_delete', {'id':jeu.id}) }}" class="btn btn-danger">Supprimer</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <div class="text-right">
+            <a href="{{ path('jeux_form_insert') }}" class="btn btn-primary">Créé un nouveau jeu</a>
+        </div>
+
+
+    </div>
+{% endblock %}

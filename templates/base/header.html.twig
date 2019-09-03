@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
+<body>
+<header>
+    <div class="img-header">
+        {#        <img class="imgFluid" src="{{ asset('assets/img/img-header.jpg') }}" alt="">#}
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="{{ path('index') }}">Acceuil</a></li>
+
+    {% for listejeux in jeux %}
+
+            <li><a href="{{ path('jeux',{'id': listejeux.id}) }}">{{ listejeux.navtitre }}</a></li>
+
+        <div class="linkjeu">
+            <a href="{{ path('jeux',{'id': listejeux.id}) }}">{{ listejeux.navtitre }}</a>
+        </div>
+
+    {% endfor %}
+        </ul>
+    </div>
+
+
+</header>
+
+<main>
+
+
+

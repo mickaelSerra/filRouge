@@ -1,0 +1,30 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+
+    <div class="backgroundJeu">
+
+    <h1>{{ jeu.titre }}</h1>
+
+        <hr size="3" color="black">
+
+    <div class="containerJeu">
+
+        <div class="imgJeu">
+    <img src="{{ asset('assets/img') }}/{{ jeu.photo }}" alt="" class="imgFluid">
+        </div>
+
+        <div class="infoJeu">
+            <h2>Plateforme</h2>
+    <p>{{ jeu.plateformes }}</p>
+            <h2>Date de sortie</h2>
+    <p>{{ jeu.date|date("d/m/Y") }}</p>
+            <h2>Synopsis</h2>
+    <p>{{ jeu.synopsis }}</p>
+        </div>
+
+    </div>
+
+    </div>
+
+{% endblock %}

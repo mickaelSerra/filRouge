@@ -1,0 +1,28 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+
+    <div class="backgroundJeu">
+
+        <h1>{{ perso.nom }} {{ perso.prenom }}</h1>
+
+        <hr size="3" color="black">
+
+        <div class="containerJeu">
+
+            <div class="imgJeu">
+                <img src="{{ asset('assets/img') }}/{{ perso.photos }}" alt="" class="imgFluid">
+            </div>
+
+            <div class="infoJeu">
+                <h2>Date de naissance</h2>
+               <p>{{ perso.datedenaissance|date('d/m/y') }}</p>
+                <h2>Biographie</h2>
+                <p>{{ perso.biographie }}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Assassin;
+    src: url("../../assets/font/Assassin$.ttf");
+}
+
+/*----------------------------body-------------------------------*/
+body{
+    background-image: url(../img/fond.jpg);
+    background-size:cover;
+    margin: 0;
+}
+/*----------------------------body-------------------------------*/
+
+/*----------------------------header-----------------------------*/
+.img-header{
+    background-image: url(../img/img-header.jpg);
+    height:40vh;
+    background-size:cover;
+    margin: 0 auto;
+    width: 85%;
+    background-position: right 0px bottom 550px;
+    -webkit-box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
+    box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
+
+}
+.imgFluid{
+    width: 100%;
+    height: auto;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    /*font-family: Assassin;*/
+    text-align: center;
+    padding: 0.2em;
+}
+.navbar ul {
+    margin: 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-inline-start: 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    height: auto;
+    background: rgb(9,9,9);
+    background: linear-gradient(90deg, rgba(9,9,9,0.7234244039412641) 0%, rgba(0,6,9,0.7234244039412641) 100%);
+    margin:0 auto;
+}
+a{
+    text-decoration: none color(white);
+    cursor: url("../../assets/cursor/Assassin's Creed Cursor BLACK.cur"),pointer;
+    color: white;
+
+}
+.linkjeu{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    height: auto;
+    background: rgb(9,9,9);
+    background: linear-gradient(90deg, rgba(9,9,9,0.7234244039412641) 0%, rgba(0,6,9,0.7234244039412641) 100%);
+    margin:0 auto;
+    display: none;
+
+}
+
+
+
+
+/*----------------------------fin header-----------------------------*/
+
+/*----------------------------debut main------------------------*/
+
+.backgroundJeu{
+    width: 85%;
+    margin-left: 114px;
+    margin-top: 59px;
+    background-color: white;
+    -webkit-box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
+    box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
+    border-radius: 3%;
+}
+
+.backgroundJeu h1 {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-family: Assassin;
+}
+
+.containerJeu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.imgJeu{
+    width: 45%;
+    height: auto;
+}
+
+.infoJeu{
+    width: 45%;
+    height: auto;
+}
+/*----------------------------fin main-----------------------------*/

@@ -1,0 +1,40 @@
+{% extends 'base/base_admin.html.twig' %}
+
+{% block title 'Gérer les personnages' %}
+
+{% block body %}
+
+    <div class="container mt -4">
+        <h1>Gérer les personnages</h1>
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message  }}
+            </div>
+        {% endfor %}
+
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Personnages</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for perso in persos %}
+                <tr>
+                    <td>{{ perso.nom }}</td>
+                    <td><a href="{{ path('perso_form_modif', {'id': perso.id}) }}" class="btn btn-secondary">Editer</a>
+                        <a href="{{ path('perso_delete', {'id':perso.id}) }}" class="btn btn-danger">Supprimer</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <div class="text-right">
+            <a href="{{ path('perso_form_insert') }}" class="btn btn-primary">Créé un nouveau perso</a>
+        </div>
+
+
+    </div>
+{% endblock %}
