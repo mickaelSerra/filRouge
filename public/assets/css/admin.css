@@ -1,0 +1,22 @@
+
+.deleteSecurityModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    border: 2px solid red;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+.securityResponses {
+    display: flex;
+    padding: 30px;
+    cursor: pointer;
+    color: black !important;
+}
+

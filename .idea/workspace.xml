@@ -2,127 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="274a1130-702d-49e0-b35c-ee7807a8d1b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/projet-assassin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/cache.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/debug.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/easy_log_handler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/fos_user.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/fos_user.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/cursor/Assassin's Creed Cursor BLACK.cur" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/font/Assassin$.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/altair2-5d6e5965ca708.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreed-5d654cf4adf33.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreed-5d654d6795411.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreed-5d654fb8cd054.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreed-5d6e3ce785bf0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreed2-5d65521f7f375.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreed2-5d67d6a745db8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreedbrotherhood-5d65562f37fe2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreedbrotherhood-5d66a69e7f560.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreediii-5d67ca20dcda0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreedivblackflag-5d67cce2a74a6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreedorigins-5d66890444c33.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreedorigins-5d668bf80b182.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreedorigins-5d67d4dc6bcbc.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreedrevelations-5d6557f6968ba.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreedsyndicate-5d67d3eba58d4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreedunity-5d67d2d1da93c.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assassinscreedunity-5d6e3dd8a641e.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/bande.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/ezio-5d6e7823c4a11.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/fond.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/img-fond.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/img-header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/ubisoftassassinscreedodyssey0652eb23e0f9dbfc450400-5d63e6b8dd23e.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/ubisoftassassinscreedodyssey0652eb23e0f9dbfc450400-5d669dd619521.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/ubisoftassassinscreedodyssey0652eb23e0f9dbfc450400-5d66a284751a2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/ubisoftassassinscreedodyssey0652eb23e0f9dbfc450400-5d67d5a11dfeb.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminJeuxController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminPersoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/JeuxController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/PersoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Jeux.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Personnages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/JeuxType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/PersonnagesType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190816135452.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190816135757.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190816135940.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190820130907.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190820131030.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190826122932.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190826150712.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190903120334.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190903120718.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/JeuxRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/PersonnageRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/PersonnagesRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundles/FOSUser/layout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_jeux.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_jeux_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_perso.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_perso_from.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/base_admin.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/footer.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/header.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/jeux/all_jeux.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/jeux/all_perso.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/carousel1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/carousel2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/carousel3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminJeuxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminJeuxController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PersonnagesType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PersonnagesType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/admin_jeux.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_jeux.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/base_admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base_admin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/header.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/jeux/all_perso.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/jeux/all_perso.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +161,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exo-blog-symfony" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -276,12 +174,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\projet-assassin\templates\admin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\projet-assassin\public\assets\img" />
+      <recent name="C:\wamp64\www\projet-assassin\public\assets\js" />
       <recent name="C:\wamp64\www\projet-assassin\templates\base" />
       <recent name="C:\wamp64\www\projet-assassin\templates\admin" />
       <recent name="C:\wamp64\www\projet-assassin\templates\admin\jeux" />
-      <recent name="C:\wamp64\www\projet-assassin\templates\jeux" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -325,8 +226,24 @@
       <workItem from="1567082419650" duration="677000" />
       <workItem from="1567086203339" duration="2535000" />
       <workItem from="1567096832555" duration="3023000" />
-      <workItem from="1567166949863" duration="34741000" />
+      <workItem from="1567166949863" duration="43516000" />
+      <workItem from="1567598204190" duration="12660000" />
     </task>
+    <task id="LOCAL-00001" summary="03/09/2019">
+      <created>1567522026373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567522026373</updated>
+    </task>
+    <task id="LOCAL-00002" summary="03/09/2019">
+      <created>1567522163996</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567522163996</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,10 +254,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="03/09/2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="03/09/2019" />
   </component>
 </project>

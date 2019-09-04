@@ -12,25 +12,28 @@
 </head>
 <body>
 <header>
-    <div class="img-header">
+    <div class="imgHeader">
         {#        <img class="imgFluid" src="{{ asset('assets/img/img-header.jpg') }}" alt="">#}
     </div>
 
+
     <div class="navbar">
-        <ul>
-            <li><a href="{{ path('index') }}">Acceuil</a></li>
+        <a href="{{ path('index') }}">Accueil</a>
 
-    {% for listejeux in jeux %}
-
-            <li><a href="{{ path('jeux',{'id': listejeux.id}) }}">{{ listejeux.navtitre }}</a></li>
-
-        <div class="linkjeu">
-            <a href="{{ path('jeux',{'id': listejeux.id}) }}">{{ listejeux.navtitre }}</a>
-        </div>
-
-    {% endfor %}
-        </ul>
+        {% for listejeux in jeux %}
+            <div class="gameLinks">
+                <a href="{{ path('jeux',{'id': listejeux.id}) }}" class="titrejeu">{{ listejeux.navtitre }}</a>
+                <div class="gameLink">
+                    <a href="{{ path('jeux',{'id': listejeux.id}) }}">jeu</a>
+                    <a href="{{ path('jeux',{'id': listejeux.id}) }}">Personnages</a>
+                    <a href="{{ path('jeux',{'id': listejeux.id}) }}">Lieux</a>
+                </div>
+            </div>
+        {% endfor %}
     </div>
+
+
+
 
 
 </header>

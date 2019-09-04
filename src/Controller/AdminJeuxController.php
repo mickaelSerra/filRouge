@@ -16,9 +16,16 @@ use Symfony\Component\Routing\Annotation\Route;
 class AdminJeuxController extends AbstractController
 {
     /**
+     * @return Response
+     * @Route("/admin", name="admin")
+     */
+    public function admin() {
+        return $this->render('admin/index.html.twig');
+    }
+
+    /**
      * @Route("/admin/jeux" , name="admin_jeux", methods="GET|POST")
      */
-
 
     public function admin_jeux(JeuxRepository $jeuxRepository)
     {

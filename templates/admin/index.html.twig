@@ -1,0 +1,12 @@
+{% extends 'base/base_admin.html.twig' %}
+
+{% block title 'Interface administrateur' %}
+
+{% block body %}
+
+    <div class="container mt -4">
+        <a href="{{ path('admin_jeux') }}">Gérer les jeux</a>
+        <a href="{{ path('admin_perso') }}">Gérer les personnages</a>
+    </div>
+
+{% endblock %}

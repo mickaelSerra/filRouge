@@ -25,7 +25,7 @@ class HomeController extends AbstractController
         $jeu = $jeuxRepository->findAll();
         $perso = $personnagesRepository->findAll();
         //on apelle un fichier twig avec en paramètre le nom du fichier twig
-        return $this->render('base/header.html.twig',
+        return $this->render('index.html.twig',
             [
                 //en second paramètre un tableau qui contient les variables envoyées au fichier twig
                 //Il ne reste plus qu'à les appeler dans le fichier Twig

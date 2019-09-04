@@ -31,8 +31,7 @@ class PersonnagesType extends AbstractType
             ])
             ->add('date_de_naissance', DateType::class,[
 
-                'widget' => 'single_text',
-                'format' => 'dd-MM-yyyy'
+                'widget' => 'single_text'
             ])
             ->add('Biographie')
             ->add('Nom')

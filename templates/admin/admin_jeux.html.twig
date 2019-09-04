@@ -25,9 +25,18 @@
                 <tr>
                     <td>{{ jeu.titre }}</td>
                     <td><a href="{{ path('admin_jeu_modif', {'id': jeu.id}) }}" class="btn btn-secondary">Editer</a>
-                        <a href="{{ path('jeu_delete', {'id':jeu.id}) }}" class="btn btn-danger">Supprimer</a>
+                        <div class="btn btn-danger deleteSecurity">Supprimer</div>
                     </td>
                 </tr>
+
+                <div class="deleteSecurityModal">
+                    <p>T'es bien sûr mon pote ?</p>
+                    <div class="securityResponses">
+                        <a href="{{ path('jeu_delete', {'id': jeu.id}) }}">Oui</a>
+                        <span class="closeModal">Non</span>
+                    </div>
+                </div>
+
             {% endfor %}
             </tbody>
         </table>
