@@ -19,6 +19,16 @@ class JeuxRepository extends ServiceEntityRepository
         parent::__construct($registry, Jeux::class);
     }
 
+    public function getAllJeux(){
+        return $this->createQueryBuilder('j')
+                ->select('j')
+                ->leftJoin('j.personnages', 'perso')
+                ->addSelect('perso')
+                ->getQuery()
+                ->getResult();
+
+    }
+
     // /**
     //  * @return Jeux[] Returns an array of Jeux objects
     //  */

@@ -20,6 +20,7 @@ class AdminJeuxController extends AbstractController
      * @Route("/admin", name="admin")
      */
     public function admin() {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         return $this->render('admin/index.html.twig');
     }
 
@@ -29,6 +30,7 @@ class AdminJeuxController extends AbstractController
 
     public function admin_jeux(JeuxRepository $jeuxRepository)
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         $jeux = $jeuxRepository->findAll();
         return $this->render('admin/admin_jeux.html.twig', ["jeux" => $jeux]);
 
@@ -40,6 +42,7 @@ class AdminJeuxController extends AbstractController
 
     public function jeuFormInsert(Request $request, EntityManagerInterface $entityManager)
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
 
         $jeu = new Jeux;
 
@@ -65,7 +68,7 @@ class AdminJeuxController extends AbstractController
                 } catch (FileException $e) {
 
                 }
-                // Met à jour l'image pour stocker le nouveau nom de la image
+                // Met à jour l'image pour stocker le nouveau nom de l'image
                 $jeu->setPhoto($newFilename);
             }
 
@@ -86,6 +89,7 @@ class AdminJeuxController extends AbstractController
 
     public function jeuDelete($id, JeuxRepository $jeuxRepository, EntityManagerInterface $entityManager)
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         $jeu = $jeuxRepository->find($id);
 
         $entityManager->remove($jeu);
@@ -105,6 +109,7 @@ class AdminJeuxController extends AbstractController
      */
     public function jeuFormModif($id, Request $request, EntityManagerInterface $entityManager, JeuxRepository $jeuxRepository)
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
 
         $jeu = $jeuxRepository->find($id);
 

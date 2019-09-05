@@ -2,6 +2,9 @@
     font-family: Assassin;
     src: url("../../assets/font/Assassin$.ttf");
 }
+h2{
+    text-shadow: 1px 1px 1px #000000;
+}
 
 /*----------------------------body-------------------------------*/
 body{
@@ -59,13 +62,15 @@ body{
 }
 
 .navbar a:hover {
-    color: rgba(112, 0, 22, 0.15);
+    color: red;
+
 }
 
 a{
     text-decoration: none color(white);
     cursor: url("../../assets/cursor/Assassin's Creed Cursor BLACK.cur"),pointer;
     color: white;
+    text-shadow: 2px 2px 2px #000000;
 
 }
 
@@ -97,7 +102,7 @@ a{
 }
 
 .gameLink a {
-    padding: 0 10px;
+    padding: 0 40px;
 }
 
 
@@ -148,6 +153,10 @@ a{
     width: 50%;
     margin: 0 auto;
 }
+#carouselExampleIndicators{
+    height: 300px;
+    overflow: hidden;
+}
 /*----------------------------fin main-----------------------------*/
 
 /*------------------------------debut footer----------------------*/
@@ -182,5 +191,14 @@ footer{
     left: 75%;
     top: 45%;
 }
+
+.espaceAdmin{
+    text-align:right;
+    color: white;
+    position: absolute;
+    right: 75%;
+    top: 45%;
+}
+/*-----------------------------------fin footer---------------------------------*/
 
 

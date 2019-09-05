@@ -21,9 +21,10 @@ class HomeController extends AbstractController
     public function lienJeux(JeuxRepository $jeuxRepository, PersonnagesRepository $personnagesRepository)
     {
         //findall permet de trouver toutes les données stockées dans ma BDD jeux
-        $jeux = $jeuxRepository->findAll();
+        $jeux = $jeuxRepository->getAllJeux();
         $jeu = $jeuxRepository->findAll();
         $perso = $personnagesRepository->findAll();
+
         //on apelle un fichier twig avec en paramètre le nom du fichier twig
         return $this->render('index.html.twig',
             [

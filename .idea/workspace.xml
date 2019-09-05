@@ -2,25 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="274a1130-702d-49e0-b35c-ee7807a8d1b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/carousel1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/carousel2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/carousel3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/Assassins-Creed-odyssey.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AdminJeuxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminJeuxController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminPersoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminPersoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PersonnagesType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PersonnagesType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/JeuxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/JeuxController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/JeuxRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/JeuxRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/admin_jeux.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_jeux.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/admin_jeux_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_jeux_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/admin_perso.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_perso.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base/base_admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base_admin.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/footer.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/header.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/jeux/all_perso.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/jeux/all_perso.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +223,7 @@
       <workItem from="1567086203339" duration="2535000" />
       <workItem from="1567096832555" duration="3023000" />
       <workItem from="1567166949863" duration="43516000" />
-      <workItem from="1567598204190" duration="12660000" />
+      <workItem from="1567598204190" duration="27372000" />
     </task>
     <task id="LOCAL-00001" summary="03/09/2019">
       <created>1567522026373</created>
@@ -243,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567522163996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="04/09/2019">
+      <created>1567625380718</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567625380718</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +267,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="03/09/2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="03/09/2019" />
+    <MESSAGE value="04/09/2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="04/09/2019" />
   </component>
 </project>

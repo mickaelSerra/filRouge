@@ -20,6 +20,7 @@ class AdminPersoController extends AbstractController
      */
     public function admin_perso(PersonnagesRepository $personnagesRepository)
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         $persos = $personnagesRepository->findAll();
         return $this->render('admin/admin_perso.html.twig', ["persos" => $persos]);
 
@@ -31,7 +32,7 @@ class AdminPersoController extends AbstractController
 
     public function persoFormInsert(Request $request, EntityManagerInterface $entityManager)
     {
-
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         $perso = new Personnages();
 
         $form = $this->createForm(PersonnagesType::class, $perso);
@@ -78,6 +79,7 @@ class AdminPersoController extends AbstractController
 
     public function persoDelete($id, PersonnagesRepository $personnagesRepository, EntityManagerInterface $entityManager)
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         $perso = $personnagesRepository->find($id);
 
         $entityManager->remove($perso);
@@ -94,7 +96,7 @@ class AdminPersoController extends AbstractController
      */
     public function jeuFormModif($id, Request $request, EntityManagerInterface $entityManager, PersonnagesRepository $personnagesRepository)
     {
-
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         $perso = $personnagesRepository->find($id);
 
         $form = $this->createForm(PersonnagesType::class, $perso);

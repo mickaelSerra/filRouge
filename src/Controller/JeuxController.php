@@ -19,7 +19,7 @@ class JeuxController extends AbstractController
     public function jeux($id, JeuxRepository $jeuxRepository)
     {
         $jeu = $jeuxRepository->find($id);
-        $jeux = $jeuxRepository->findAll();
+        $jeux = $jeuxRepository->getAllJeux();
 
         return $this->render('jeux/all_jeux.html.twig', [
             'jeu' => $jeu,

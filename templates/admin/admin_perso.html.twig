@@ -23,11 +23,18 @@
             <tbody>
             {% for perso in persos %}
                 <tr>
-                    <td>{{ perso.nom }}</td>
+                    <td>{{ perso.prenom }}</td>
                     <td><a href="{{ path('perso_form_modif', {'id': perso.id}) }}" class="btn btn-secondary">Editer</a>
-                        <a href="{{ path('perso_delete', {'id':perso.id}) }}" class="btn btn-danger">Supprimer</a>
+                        <div class="btn btn-danger deleteSecurity">Supprimer</div>
                     </td>
                 </tr>
+                <div class="deleteSecurityModal">
+                    <p>Voulez vous vraiment supprimé</p>
+                    <div class="securityResponses">
+                        <a href="{{ path('perso_delete', {'id': perso.id}) }}">Oui</a>
+                        <span class="closeModal">Non</span>
+                    </div>
+                </div>
             {% endfor %}
             </tbody>
         </table>
