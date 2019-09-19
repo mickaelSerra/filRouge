@@ -16,7 +16,6 @@ use Symfony\Component\Routing\Annotation\Route;
 class AdminJeuxController extends AbstractController
 {
     /**
-     * @return Response
      * @Route("/admin", name="admin")
      */
     public function admin() {
@@ -45,16 +44,18 @@ class AdminJeuxController extends AbstractController
         $this->denyAccessUnlessGranted('ROLE_ADMIN');
 
         $jeu = new Jeux;
-
+        /* Création d'un formulaire à partir d'un gabarit "JeuxType"*/
         $form = $this->createForm(JeuxType::class, $jeu);
         $formJeuView = $form->createView();
 
         if ($request->isMethod('post')) {
-
+            /*On fait appel à la méthode "handleRequest" qui fait le lien entre les données rentrées et le formulaire*/
             $form->handleRequest($request);
+
             $imageFile = $form['photos']->getData();
 
             if ($imageFile) {
+                /*Capture le nom de mon image et la stock dans la variable "$originalFilname" */
                 $originalFilename = pathinfo($imageFile->getClientOriginalName(), PATHINFO_FILENAME);
                 // Nécessaire pour inclure le nom du fichier en tant qu'URL
                 $safeFilename = transliterator_transliterate('Any-Latin; Latin-ASCII; [^A-Za-z0-9] remove; Lower()', $originalFilename);
@@ -96,8 +97,6 @@ class AdminJeuxController extends AbstractController
         $entityManager->flush();
         $this->addFlash('success','Jeu supprimé avec succès');
 
-        //return new Response('suppression');
-
         return $this->redirectToRoute('admin_jeux');
 
     }
@@ -129,10 +128,8 @@ class AdminJeuxController extends AbstractController
                 $entityManager->flush();
                 $this->addFlash('success','Jeu édité avec succès');
                 return $this->redirectToRoute('admin_jeux');
-
             }
         }
-
         return $this->render('admin/admin_jeux_form.html.twig', [
 
             'formJeuView' => $formJeuView

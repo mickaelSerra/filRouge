@@ -15,22 +15,30 @@ body{
 /*----------------------------body-------------------------------*/
 
 /*----------------------------header-----------------------------*/
+#title{
+    text-align: center;
+    color: black;
+    font-family: Assassin;
+    font-size: 70px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px #000000;
+}
 .imgHeader{
     background-image: url(../img/img-header.jpg);
+    /*vh hauteur vertical*/
     height:40vh;
     background-size:cover;
     margin: 0 auto;
     width: 85%;
-    background-position: right 0px bottom 550px;
-    -webkit-box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
+    background-position: center ;
     -moz-box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
     box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
+    background-repeat: no-repeat;
 
 }
 .imgFluid{
     width: 100%;
     height: auto;
-
 }
 .navbar ul li{
     list-style: none;
@@ -50,6 +58,7 @@ body{
     padding-inline-start: 0;
 }
 .navbar{
+    /*display permet d'aligné les unes a la suite des autres*/
     display: flex;
     justify-content: space-around;
     width: 85%;
@@ -104,10 +113,47 @@ a{
 .gameLink a {
     padding: 0 40px;
 }
+.fa-1x {
+    font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+.navbar-box{
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.navbar-block{
+    display: none;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 150px;
+}
+.navbar-toggler{
+    background-color: white;
+    display: block;
+}
+.navbar-nav{
+    margin-top: 30px;
+    background-color: rgba(0,0,0,1);
+}
 
-
-
-
+.navbar-nav .nav-item a {
+    color: white!important;
+}
+.dark-blue-text {
+    color: #0A38F5;
+}
+.dark-pink-text {
+    color: #AC003A;
+}
+.dark-amber-text {
+    color: #ff6f00;
+}
+.dark-teal-text {
+    color: #004d40;
+}
 
 /*----------------------------fin header-----------------------------*/
 
@@ -115,8 +161,7 @@ a{
 
 .backgroundJeu{
     width: 85%;
-    margin-left: 114px;
-    margin-top: 59px;
+    margin: 59px auto 0;
     background-color: white;
     -webkit-box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
@@ -154,8 +199,9 @@ a{
     margin: 0 auto;
 }
 #carouselExampleIndicators{
-    height: 300px;
+    height: 400px;
     overflow: hidden;
+    box-shadow: 9px 4px 35px 8px rgba(0,0,0,0.75);
 }
 /*----------------------------fin main-----------------------------*/
 
@@ -201,4 +247,32 @@ footer{
 }
 /*-----------------------------------fin footer---------------------------------*/
 
+/*------------------------------Responsive--------------------------*/
+
+@media screen and (max-width: 950px){
+    .navbar-main{
+        display: none;
+    }
+    .navbar-block{
+        display: block;
+    }
+.containerJeu{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.imgJeu{
+    width: 80%;
+    margin: 0 auto;
+}
+.infoJeu{
+    width: 80%;
+    margin: 0  auto;
+}
+#title{
+    font-size: 50px;
+}
+
+}
+/*-----------------------------Responsive-----------------------------*/
 

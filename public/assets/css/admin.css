@@ -1,5 +1,6 @@
 
 .deleteSecurityModal {
+    margin-top: 16px;
     display: none;
     position: fixed;
     top: 50%;
@@ -14,9 +15,14 @@
 }
 
 .securityResponses {
+    width: 60%;
+    margin: 0 auto;
     display: flex;
     padding: 30px;
     cursor: pointer;
     color: black !important;
+}
+.valid{
+    margin-top: 16px;
 }
 

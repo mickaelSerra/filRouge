@@ -11,12 +11,12 @@
         <div class="containerJeu">
 
             <div class="imgJeu">
-                <img src="{{ asset('assets/img') }}/{{ perso.photos }}" alt="" class="imgFluid">
+                <img src="{{ asset('assets/img') }}/{{ perso.photos }}" alt="photo du personnage" class="imgFluid">
             </div>
 
             <div class="infoJeu">
                 <h2>Date de naissance</h2>
-               <p>{{ perso.datedenaissance|date('d/m/y') }}</p>
+                <p>{{ perso.datedenaissance|date('d/m/y') }}</p>
                 <h2>Biographie</h2>
                 <p>{{ perso.biographie }}</p>
             </div>

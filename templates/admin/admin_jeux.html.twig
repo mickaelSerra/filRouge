@@ -30,10 +30,10 @@
                 </tr>
 
                 <div class="deleteSecurityModal">
-                    <p>Voulez vous vraiment supprimé</p>
+                    <p class="valid">Voulez vous vraiment supprimé</p>
                     <div class="securityResponses">
-                        <a href="{{ path('jeu_delete', {'id': jeu.id}) }}">Oui</a>
-                        <span class="closeModal">Non</span>
+                        <a href="{{ path('jeu_delete', {'id': jeu.id}) }}"><button type="button" class="btn btn-primary">Oui</button></a>&nbsp;&nbsp;
+                        <span class="closeModal"><button type="button" class="btn btn-danger">Non</button></span>
                     </div>
                 </div>
 
